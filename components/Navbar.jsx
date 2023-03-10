@@ -5,6 +5,7 @@ import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { useRouter } from 'next/router';
+import navLogo from '../public/assets/navLogo.png';
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
@@ -51,7 +52,7 @@ const Navbar = () => {
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
         <Link href='/'>
           <Image
-            src='https://media.licdn.com/dms/image/D4E03AQF3G8P0Lo-ndg/profile-displayphoto-shrink_800_800/0/1677043126335?e=1683763200&v=beta&t=VmT3fxLl_ofQGxavjsLFI6WxYbs35z_46Ej4-VR7fjA'
+            src='/../public/assets/navLogo.png'
             alt='/'
             width='85'
             height='50'
@@ -96,12 +97,7 @@ const Navbar = () => {
           }
         >
           <div className='flex w-full items-center justify-between'>
-            <Image
-              src='/../public/assets/navLogo.png'
-              alt='/'
-              width='87'
-              height='35'
-            />
+            <Image src={navLogo} alt='/' width='87' height='35' />
             <div
               onClick={handleNav}
               className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'
