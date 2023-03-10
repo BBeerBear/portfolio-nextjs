@@ -51,7 +51,7 @@ const Navbar = () => {
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
         <Link href='/'>
           <Image
-            src='/../public/assets/navLogo.png'
+            src='https://media.licdn.com/dms/image/D4E03AQF3G8P0Lo-ndg/profile-displayphoto-shrink_800_800/0/1677043126335?e=1683763200&v=beta&t=VmT3fxLl_ofQGxavjsLFI6WxYbs35z_46Ej4-VR7fjA'
             alt='/'
             width='85'
             height='50'
